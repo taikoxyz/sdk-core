@@ -163,6 +163,16 @@ const TAIKO_JOLNIR_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0xb2010B4599C0d04fA29edB5B13E07FafC4378e7b'
 }
 
+const TAIKO_KATLA_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xC4d03e4055381525F9d7B545f87AC6F7c114218D',
+  multicallAddress: '0xaF23C54A651A548Eb17B9aF1Fd5b33a224579769',
+  quoterAddress: '0x8d843f48D568A057EbCC482c51C6891459E145Ed',
+  v3MigratorAddress: '0x07838d4551aeBf21F7d156977D3909519D2f8d37',
+  nonfungiblePositionManagerAddress: '0x5CBFccd27dB8A3981FE9965b0de59D436B2BD8b9',
+  tickLensAddress: '0xFEB10deB5480F53F5fB4517E0EbB82eBD2386D53',
+  swapRouter02Address: '0xfa9063E521f3adb2C850D6dddacaA0dBAD947786'
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -180,6 +190,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
   [ChainId.TAIKO_JOLNIR]: TAIKO_JOLNIR_ADDRESSES,
+  [ChainId.TAIKO_KATLA]: TAIKO_KATLA_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
